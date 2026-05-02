@@ -51,7 +51,7 @@ const Hero = () => {
           </p>
           <div style={{ display: 'flex', gap: '1rem' }}>
             <a
-              href="/Ratchana Resume.pdf"
+              href="/RatchanaResume.pdf"
               download
               style={{
                 padding: '0.65rem 1.75rem',
