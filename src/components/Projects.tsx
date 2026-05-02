@@ -1,6 +1,6 @@
 const projects = [
   { num: '01', title: 'Leafy Haven Rooftop Greening', desc: 'Led AI development in a team of 6 for a City of Melbourne sustainability project. Built a multi-model pipeline using FastSAM, MiDaS and Stable Diffusion. Presented at Monash Data Science & AI industry event.', tags: ['FastSAM', 'MiDaS', 'Stable Diffusion', 'OpenCV', 'Python'], github: 'https://github.com/Ratch03/Leafy-Haven-AI' },
-  { num: '02', title: 'Smart Parking Availability Platform', desc: 'Designed MySQL schema integrating 6 open government datasets. Led data insights epic analysing Melbourne CBD congestion. Contributed to a deployed web platform with real-time parking map.', tags: ['MySQL', 'Python', 'FastAPI', 'Open Data'], 'Group project — repository maintained privately by the team.' },
+  { num: '02', title: 'Smart Parking Availability Platform', desc: 'Designed MySQL schema integrating 6 open government datasets. Led data insights epic analysing Melbourne CBD congestion. Contributed to a deployed web platform with real-time parking map.', tags: ['MySQL', 'Python', 'FastAPI', 'Open Data'], github: '' },
   { num: '03', title: 'Rift Valley Fever Scheduling', desc: 'Built a multi-objective constraint optimisation model in MiniZinc. Conducted full sensitivity analysis across 9 datasets and 10 constraint groups using the HiGHS solver.', tags: ['MiniZinc', 'HiGHS Solver', 'Constraint Programming'], github: 'https://github.com/Ratch03/Rift-Valley-Fever-Clinical-Trial-Scheduling-MiniZinc' },
   { num: '04', title: 'Mine Planning Optimisation', desc: 'Built a MiniZinc model to find the most profitable underground mine tunnel path, maximising ore yield within budget and tunnel length constraints across a 2D grid.', tags: ['MiniZinc', 'Constraint Programming', 'Optimisation'], github: 'https://github.com/Ratch03/Mine-Planning-Optimization' },
 ]
@@ -30,8 +30,10 @@ const Projects = () => {
                   <span key={t} style={{ fontSize: '0.68rem', letterSpacing: '0.05em', padding: '0.2rem 0.6rem', border: '0.5px solid #ddd', color: '#777' }}>{t}</span>
                 ))}
               </div>
-              {p.github && (
+              {p.github ? (
                 <a href={p.github} target="_blank" rel="noreferrer" style={{ marginTop: '1.25rem', fontSize: '0.78rem', color: '#111', textDecoration: 'none', letterSpacing: '0.05em', borderTop: '0.5px solid #ebebeb', paddingTop: '1rem', textAlign: 'center' }}>View on GitHub ↗</a>
+              ) : (
+                <p style={{ marginTop: '1.25rem', fontSize: '0.78rem', color: '#aaa', letterSpacing: '0.05em', borderTop: '0.5px solid #ebebeb', paddingTop: '1rem', textAlign: 'center', fontStyle: 'italic' }}>Group project — repository maintained privately by the team</p>
               )}
             </div>
           ))}
