@@ -28,7 +28,7 @@ const Skills = () => {
                 <p style={{ fontSize: '0.72rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: '#555', margin: 0 }}>{group.category}</p>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.6rem' }}>
                   {group.items.map(item => (
-                    <span key={item} style={{ fontSize: '0.82rem', padding: '0.35rem 0.9rem', border: '0.5px solid #333', color: '#555', borderRadius: '2px', letterSpacing: '0.02em', fontWeight: 400 }}>{item}</span>
+                    <span key={item} style={{ fontSize: '0.82rem', padding: '0.35rem 0.9rem', border: '0.5px solid #333', color: '#fff', borderRadius: '2px', letterSpacing: '0.02em', fontWeight: 400 }}>{item}</span>
                   ))}
                 </div>
               </div>
