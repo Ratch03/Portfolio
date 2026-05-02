@@ -1,7 +1,4 @@
-import { useState } from 'react';
-
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
   const links = ['About', 'Projects', 'Skills', 'Resume', 'Contact'];
 
   return (

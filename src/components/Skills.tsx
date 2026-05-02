@@ -60,7 +60,7 @@ const Skills = () => {
           Skills
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
-          {skills.map((group, i) => (
+          {skills.map((group) => (
             <div
               key={group.category}
               style={{
