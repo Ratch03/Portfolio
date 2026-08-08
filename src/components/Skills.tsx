@@ -1,8 +1,8 @@
 const skills = [
-  { category: 'ML & AI', items: ['PyTorch', 'OpenCV', 'Ultralytics', 'Diffusers', 'HuggingFace', 'Transformers', 'Computer Vision'] },
+  { category: 'ML & AI', items: ['PyTorch', 'OpenCV', 'Ultralytics', 'Diffusers', 'HuggingFace', 'Transformers', 'LangChain', 'ChromaDB', 'RAG', 'LLM APIs', 'Computer Vision'] },
   { category: 'Optimisation', items: ['MiniZinc', 'Constraint Programming', 'HiGHS Solver', 'Discrete Optimisation'] },
   { category: 'Languages', items: ['Python', 'SQL', 'JavaScript', 'C', 'C++'] },
-  { category: 'Web & Backend', items: ['FastAPI', 'React', 'TypeScript', 'HTML', 'CSS'] },
+  { category: 'Web & Backend', items: ['FastAPI', 'Gradio', 'React', 'TypeScript', 'HTML', 'CSS'] },
   { category: 'Data & Databases', items: ['MySQL', 'Open Data APIs', 'Data Pipelines', 'ABS Datasets'] },
   { category: 'Tools', items: ['Git', 'Linux', 'Burp Suite', 'Wireshark', 'Kali Linux'] },
 ]
