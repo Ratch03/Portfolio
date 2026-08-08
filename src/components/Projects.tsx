@@ -12,6 +12,7 @@ const Projects = () => {
       <style>{`
         .projects-section { padding: 4.5rem 3rem; border-top: 1px solid #ebebeb; max-width: 1100px; margin: 0 auto; }
         .projects-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: #e8e8e8; }
+        .project-card:last-child:nth-child(odd) { grid-column: 1 / -1; max-width: 50%; margin: 0 auto; width: 100%; }
         .project-card { background: #fff; padding: 1.75rem; display: flex; flex-direction: column; }
         @media (max-width: 600px) {
           .projects-section { padding: 3rem 1.25rem; }
