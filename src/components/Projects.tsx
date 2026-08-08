@@ -10,14 +10,15 @@ const Projects = () => {
   return (
     <>
       <style>{`
-        .projects-section { padding: 4.5rem 3rem; border-top: 1px solid #ebebeb; max-width: 1100px; margin: 0 auto; }
-        .projects-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: #e8e8e8; }
-        .project-card:last-child:nth-child(odd) { grid-column: 1 / -1; max-width: 50%; margin: 0 auto; width: 100%; background: #fff; }
-        .project-card { background: #fff; padding: 1.75rem; display: flex; flex-direction: column; }
-        @media (max-width: 600px) {
-          .projects-section { padding: 3rem 1.25rem; }
-          .projects-grid { grid-template-columns: 1fr; } 
-            `}</style>
+            .projects-section { padding: 4.5rem 3rem; border-top: 1px solid #ebebeb; max-width: 1100px; margin: 0 auto; }
+            .projects-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: #e8e8e8; }
+            .project-card { background: #fff; padding: 1.75rem; display: flex; flex-direction: column; }
+            .project-card-last { background: #fff; padding: 1.75rem; display: flex; flex-direction: column; grid-column: 1 / 2; justify-self: center; width: 100%; }
+            @media (max-width: 600px) {
+              .projects-section { padding: 3rem 1.25rem; }
+              .projects-grid { grid-template-columns: 1fr; }
+            }
+          `}</style>
       <section id="projects" className="projects-section">
         <p style={{ fontSize: '0.7rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: '#111', marginBottom: '2.5rem', fontWeight: 700 }}>Projects</p>
         <div className="projects-grid">
