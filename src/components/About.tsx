@@ -33,11 +33,25 @@ const About = () => {
           }}
         >
           I'm a Master of AI graduate from Monash University with two years of
-          hands-on project experience in computer vision and applied machine
+          hands-on project experience in computer vision, NLP and applied machine
           learning. I conceived and led the AI development for a rooftop
           greening project integrating FastSAM, MiDaS and Stable Diffusion into
           a working pipeline and presented the results at the Monash Data
           Science & AI industry event to academic and industry reviewers.
+        </p>
+        <p
+          style={{
+            color: '#aaa',
+            lineHeight: 1.85,
+            marginBottom: '1rem',
+            fontSize: '0.95rem',
+            maxWidth: '600px',
+          }}
+        >
+          Most recently I independently built a production RAG pipeline using
+          LangChain, ChromaDB and Llama 3.1 — a live Q&A assistant that
+          retrieves document-grounded answers with source citations on every
+          response.
         </p>
         <p
           style={{
@@ -56,5 +70,4 @@ const About = () => {
     </section>
   );
 };
-
 export default About;
