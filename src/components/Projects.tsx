@@ -22,8 +22,8 @@ const Projects = () => {
       <section id="projects" className="projects-section">
         <p style={{ fontSize: '0.7rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: '#111', marginBottom: '2.5rem', fontWeight: 700 }}>Projects</p>
         <div className="projects-grid">
-          {projects.map(p => (
-            <div key={p.num} className="project-card">
+          {projects.map((p, index) => (
+            <div key={p.num} className={index === projects.length - 1 ? 'project-card-last' : 'project-card'}>
               <p style={{ fontSize: '0.7rem', letterSpacing: '0.1em', color: '#bbb', marginBottom: '0.6rem' }}>{p.num}</p>
               <h3 style={{ fontFamily: 'Georgia, serif', fontSize: '1.1rem', fontWeight: 400, marginBottom: '0.6rem' }}>{p.title}</h3>
               <p style={{ fontSize: '0.85rem', color: '#666', lineHeight: 1.7 }}>{p.desc}</p>
