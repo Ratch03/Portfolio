@@ -49,7 +49,7 @@ const About = () => {
           }}
         >
           Most recently I independently built a production RAG pipeline using
-          LangChain, ChromaDB and Llama 3.1 — a live Q&A assistant that
+          LangChain, ChromaDB and Llama 3.1, a live Q&A assistant that
           retrieves document-grounded answers with source citations on every
           response.
         </p>
